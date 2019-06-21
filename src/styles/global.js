@@ -5,15 +5,23 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   html {
+    
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     box-sizing: border-box;
+    font-size: 62.5%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background-color: #edf2f7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    @media only screen and (max-width: 68.75em) {
+        font-size: 50%;
+    }
   }
+
+  
   html, body {
     font-family: 'Open Sans', sans-serif;
     width: 100%;
